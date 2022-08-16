@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Signika&display=swap');
+/* font-family: 'Herr Von Muellerhoff', cursive; */
+/* font-family: 'Signika', sans-serif; */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    /* font-family: 'Signika', sans-serif; */
+    
+}
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border:none;    
+}
+.container{
+    max-width:1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    background-image: url(img/bg_header_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Signika', sans-serif;
+}
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+
+}
+.header-logo{
+    font-size: 30px;
+    letter-spacing: 3px;
+    border-top: 10px solid #B22222;
+    border-radius: 35px;
+    padding-top: 5px;
+
+}
+.header-logo h5{
+    margin-top: 5px;
+    font-size: 13px;
+    margin-left: 15px;
+}
+.header-navbar ul{
+    display: flex;
+    margin-right: -100px;
+}
+.header-navbar ul li{
+    margin-left:20px;
+}
+.header-navbar ul li:first-child{
+    margin-right: 40px;
+}
+
+.header-navbar a{
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    transition: border-color 0.5s;
+    border-bottom: 3px solid transparent;
+}
+.header-navbar ul li a:hover{
+    border-color: #B22222;        
+}
+.header-navbar ul li a.current{
+    border-color:#B22222 ;
+}
+
+.header-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-text h1{
+    font-size: 2.5rem;
+    font-family: 'Signika', sans-serif;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-weight: 100;   
+    margin-left: 85px; 
+    
+}
+.first-letter{
+    font-size: 3.5rem;
+    font-family: 'Signika', sans-serif;
+    color: #B22222;
+}
+
+.btn-cars{
+    display: block;
+    background-color: #B22222;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px ;
+    border-bottom-right-radius: 35px;
+    margin-top: 45px;
+    margin-left: 75px;
+    position: relative;
+    overflow: hidden;
+}
+.btn-cars::after{
+    content: "BUY";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    color: #B22222;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+
+}
+.btn-cars:hover::after{
+    top: 0;
+}
+
+/* about */
+
+.about{
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100vh;
+    padding: 30px 0;
+    
+    
+
+}
+.about-title{
+    margin: 60px 0;
+}
+.about-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #B22222;
+    
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 8px;
+    
+}
+
+.bottom-line {
+    background-color: #000;
+    width: 50px;
+    height: 3px;
+    display: flex;
+    margin: 10px auto;
+  }
+  
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.about-img{
+    width: 50%;
+    height: 50%;
+    
+}
+#discover-img{
+    width: 30%;
+    height: 30%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left:-50px
+}
+.about-text{
+    width: 40%;
+}
+.about-text h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    color:#B22222;
+    font-family: 'Herr Von Muellerhoff' ;
+    letter-spacing: 8px;
+    font-weight: 100;
+
+}
+#about-text-icon{
+    color:#B22222;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-text p{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+/* portfolio */
+.port-title{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #B22222;
+    padding: 30px 0;
+    font-family: 'Signika', sans-serif; ;
+    letter-spacing: 8px;
+    font-weight: 600;
+
+    
+    
+
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.8;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+}
+.overlay button{
+    width: 110px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    margin: 20px;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 1px;
+
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.portfolio-item:hover .overlay{
+    top: 0%;
+}
+.portfolio-item:hover img{
+    transform: scale(1.1);
+}
+.portfolio-item button:hover{
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+/* contacts */
+.contact{
+    padding: 10px 0;
+}
+.page-title{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #B22222;
+    font-size: 30px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.contact{
+    padding: 55px 0;
+}
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.contact-item{
+    display: flex;
+    flex-basis: 33%;
+    align-items: center;
+    flex-direction: column;
+   
+    margin-bottom: 100px;
+}
+.contact-item i{
+    margin-bottom: 30px;
+    color: #B22222;
+}
+.contact-item p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+
+/* footer */
+.footer{
+    background-color: #000;
+}
+.footer-copyright{
+    color: antiquewhite;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    padding: 30px 0;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-social{
+    display: flex;
+}
+.footer-social i{
+    color: #B22222;
+    margin-bottom:25px;
+    padding: 0 50px;
+    transition-delay: 0s;
+    transition-duration: 1s;
+}
+.footer-social a i:hover{
+    transform: rotate(360deg);
+    
+    color:#fff  
+}
+
+#menu-icon{
+    display: none;
+    margin-left: 20px;
+    color: #B22222;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color:#B22222;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 1;
+
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+    .header-menu ul li a{
+        color:#000;
+    }
+    .header-menu ul li a:hover{
+        background-color: #29323c;
+        color: #B22222;
+    }
+
+
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .header-text h1 {
+        z-index: 0;
+        margin-top: 80px;
+
+    }
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-item{
+        margin-top: 30px;
+    }
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+}
+@media only screen and (max-width:900px){
+    .about-img{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left:85px;
+    }
+    .about-text{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .portfolio .portfolio-item{
+        flex-basis: 50%;
+    }
+
+}
+
+@media only screen and (max-width:580px){
+    .portfolio .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+

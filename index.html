@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <title>TAMISCAR</title>
+
+
+
+
+</head>
+<body>
+    <header id="header">
+
+        <div class="header">
+
+            <div class="container">
+                <div class="header-navbar">
+                    <div class="header-logo">
+                        <h2>TAMISCAR</h2>
+                        <h5>the roads <span class="txt-type" data-wait="1000"
+                            data-words='["are ours"]'></span></h5>
+                    </div>
+                    <div class="header-menu">
+                        <ul id="menuItems">
+                            <li><a href="#header" class="current">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#discover">Discover</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        
+    
+                        </ul>
+                        <i class="fa-solid fa-bars fa-3x" id="menu-icon" onclick="menuToggle()"></i>
+                    </div>
+                </div>
+                <div class="header-text">
+                    <h1><span class="first-letter">W</span>elcome</h1>
+                    
+                    <a href="#" class="btn-cars">Get Started</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- About -->
+
+    <section id="about">
+        <div class="about">
+            <div class="container">
+                <div class="about-title">
+                    <h2 >About</h2>
+                    <div class="bottom-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-img ani-left">
+                        <img src="img/about.jpg" >
+                    </div>
+                    <div class="about-text ani-right">
+                        <h4>Our Story</h4>
+                        <div id="about-text-icon"><i class="fa-solid fa-eject fa-3x"></i></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptatibus?<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, beatae?</p>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio">
+        <div class="port-title">
+            <h2>Portfolio</h2>
+            <div class="bottom-line"></div>
+        </div>
+        <div class="portfolio">
+    
+            <div class="portfolio-item ani1">
+                <img src="/img/car_1.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+            <div class="portfolio-item ani2">
+                <img src="/img/car_2.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+            <div class="portfolio-item ani3">
+                <img src="/img/car_3.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+            <div class="portfolio-item ani4">
+                <img src="/img/car_4.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+            <div class="portfolio-item ani5">
+                <img src="/img/car_5.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+            <div class="portfolio-item ani6">
+                <img src="/img/car_6.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+            <div class="portfolio-item ani7">
+                <img src="/img/car_7.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+            <div class="portfolio-item ani8">
+                <img src="/img/car_8.jpg" alt="">
+                <div class="overlay">
+                    <button type="button">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discover">
+        <div class="about">
+            <div class="container">
+                <div class="about-title">
+                    <h2>Discover</h2>
+                    <div class="bottom-line"></div>
+                </div>
+                <div class="about-content">
+                    <div id="discover-img" class="about-img ani-left">
+                        <img  src="img/discover.jpg" >
+                    </div>
+                    <div class="about-text ani-right">
+                        <h4>Our Story</h4>
+                        <div id="about-text-icon"><i class="fa-solid fa-eject fa-3x"></i></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptatibus?<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, beatae?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- discover finish -->
+
+    <!-- contact start-->
+    <section id="contact" >
+        <div class="contact">
+            <div class="container">
+                <div class="page-title">
+                    <h2>Contact</h2>
+                    <div class="bottom-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-item ani-top">
+                        <i class="fa-solid fa-phone fa-3x"></i>
+                        <p>0553***07**</p><br>
+                        <p>02320000000</p>
+                    
+                    </div>
+                    <div class="contact-item ani-bottom">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                    
+                    </div>
+                    <div class="contact-item ani-top">
+                        <i class="fas fa-envelope-open fa-3x"></i>
+                        
+                        <p>tamiscar_113@gmail.com</p>
+
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact finish -->
+
+    <!-- footer start -->
+
+    <section id="footer">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="page-title">
+                    <h2>Reach Us Out</h2>
+                </div>
+                <div class="footer-copyright">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p><br>
+                </div>
+                <nav class="footer-social">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/malitopal113"><i class="fa-brands fa-google fa-2x"></i></a>
+                            <a target="_blank" href="https://github.com/malitopal113"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                            <a target="_blank" href="https://github.com/malitopal113"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/typewriter.js"></script>
+
+
+    <script>
+
+    ScrollReveal().reveal('.ani1',{delay:250});
+    ScrollReveal().reveal('.ani2',{delay:500});
+    ScrollReveal().reveal('.ani3',{delay:750});
+    ScrollReveal().reveal('.ani4',{delay:1000});
+    ScrollReveal().reveal('.ani5',{delay:1250});
+    ScrollReveal().reveal('.ani6',{delay:1500});
+    ScrollReveal().reveal('.ani7',{delay:1750});
+    ScrollReveal().reveal('.ani8',{delay:2000});
+
+    </script>
+    <script>
+        window.sr=ScrollReveal();
+
+        sr.reveal('.ani-left',{
+            origin:'left',
+            duration:1000,
+            distance:'25rem',
+            delay:300 
+        })
+
+        sr.reveal('.ani-right',{
+            origin:'right',
+            duration:1000,
+            distance:'25rem',
+            delay:300 
+        })
+
+        sr.reveal('.ani-top',{
+            origin:'top',
+            duration:1000,
+            distance:'25rem',
+            delay:600 
+        })
+
+        sr.reveal('.ani-bottom',{
+            origin:'bottom',
+            duration:1000,
+            distance:'25rem',
+            delay:600 
+        })
+    </script>
+    
+    
+   <script>
+        let menuItems = document.getElementById('menuItems');
+        menuItems.style.maxHeight = "0px";
+        function menuToggle(){
+            if(menuItems.style.maxHeight == "0px" ){
+                menuItems.style.maxHeight = "200px"
+            }
+            else{
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    
+</body>
+</html>
